@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+main{
+    background-color: #90caf9;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+article{
+    background-color: #0d47a1;
+    color: #ffffff;
+    height: 10vh;
+    text-align: center;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

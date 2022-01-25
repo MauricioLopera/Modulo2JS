@@ -1,0 +1,95 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+header{
+    align-items: center;
+    background-color: #3949ab;
+    display: flex;
+    justify-content:space-between;
+    height: 10vh;
+    padding: 0 5px;
+}
+h1, nav{
+    display: inline-block;
+}
+h1, nav a{
+  color: #ffffff;  
+}
+h1{
+    font-size: 1.2rem;
+    margin: 0;
+}
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+nav a{
+    font-size: 0.6rem;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+nav a:hover{
+    background-color: #9fa8da;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+aside, section{
+    height: 80vh;
+}
+aside{
+    align-items: center;
+    background-color: #9fa8da;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+aside a{
+    color: #000000;
+    font-size: 1rem;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+aside a:hover{
+    background-color: #7986cb;
+}
+section{
+    background-color: #c5cae9;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+}
+article{
+    flex: 1 1 30%;
+    text-align: center;
+}
+img{
+    height: 100px;
+}
+footer{
+    align-items: center;
+    background-color: #3949ab;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+}
+p,footer a{
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+p{
+    display: inline;
+    margin: 0;
+}
+.marginIzq{
+    margin-left: 5px;
+}
