@@ -101,59 +101,55 @@
  * ingresada por un usuario es un palindromo o no. 
  */
 
-var texto;
-var resultado;
-texto = prompt("Ingrese una oracion");
+ var texto;
+ var resultado;
+ 
+ texto = prompt("ingrese una cadena de texto");
+ 
+ 
+     function palindromo(Texto) {
+     
+       
 
-function palindromo(texto){
-
-    var cadenaPrincipal = texto.toLowerCase().toUppercase();
-
-    // convertimos la cadena en un arreglo
-    var letrasEspacios = cadenaPrincipal.split("");
-
-    var cadenaSinEspacios = "";
-
-    for(i in letrasEspacios){
-        if(letrasEspacios[i] != " "){
-            cadenaSinEspacios += letrasEspacios[i];
-        }
-    }
-
-    var letras = cadenaSinEspacios;
-
-    var reverse = cadenaSinEspacios.split("").reverse("");
-
-
-    var igual = true;
-
-    for(i in letras){
-        if(letras[i] == reverse[i]){
-
-
-        }
-
-        else{
-            
-            igual = false;
-        }
-
-    }
-
-    if(igual){
-
-        resultado += "Es un palindromo";
-
-    }
-    else{
-        resultado += "No es un palindromo";
-    }
-
-    return resultado;
-}
-
-resultado = "La cadena que ingresaste: ";
-alert(palindromo(texto));
+       var cadenaPrincipal = Texto.toLowerCase().toUpperCase();
+     
+       // Convertir la cadena en un array
+       var letrasEspacios = cadenaPrincipal.split("");
+     
+       // Eliminar los espacios en blanco )
+       var cadenaSinEspacios = "";
+       for(i in letrasEspacios) {
+         if(letrasEspacios[i] != " ") {
+           cadenaSinEspacios += letrasEspacios[i];
+         }
+       }
+     
+       var letras = cadenaSinEspacios.split("");
+       var reverse = cadenaSinEspacios.split("").reverse();
+     
+    
+       var igual = true;
+       for(i in letras) {
+         if(letras[i] == reverse[i]) {
+         
+         }
+         else {
+           // Alguna letra es distinta, por lo que ya no es un palindromo
+           igual = false;
+         }
+       }
+     
+       if(igual) {
+         resultado += " es un palíndromo";
+       }
+       else {
+         resultado += " no es un palíndromo";
+       }
+     
+       return resultado;
+     }
+     resultado = "La cadena que ingresaste: ";
+     alert(palindromo(texto));
 
 
 
