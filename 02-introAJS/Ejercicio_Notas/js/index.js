@@ -30,14 +30,14 @@ for(i = 1; i <= cantidadAlumnos; i++){
     }
     promedio = sumatoria / cantidadNotas;
 
-    alumno = "Alumno: " + nombre + " - Calificacion: " + promedio;
+    alumno = "Alumno: " + nombre + " - Calificacion: " + Math.round(promedio,2);
 
     resultados.push(alumno);
 }
 
 function imprimeResultados(resultados)
 {
-    var lista;
+    var lista = "";
     for(i = 0; i < resultados.length; i++){
         lista = lista + resultados[i] + "<br>";
     }
