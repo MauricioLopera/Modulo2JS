@@ -1,0 +1,57 @@
+body{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#contenedor {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.cajacentro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12% auto !important;
+    width: 450px;
+    height: 100%;
+    background-color: #212121;
+    padding:3%;
+}
+section header h5, section header h2, aside h4, aside p{
+    color: #ffffff;
+    margin: 10px 0;
+    text-align: right;
+}
+.tamañoresultados{
+    font-size: 0.6rem;
+}
+.columna1{
+    height: 100%;
+    width: 65%;
+}
+.columna2{
+    height: 100%;
+    width: 25%;
+}
+.gridbotones{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . . ."
+        ". . . ."
+        ". . . ."
+        ". . . ."; 
+}
+button{
+    background-color: #212121;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 0;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #424242;
+}

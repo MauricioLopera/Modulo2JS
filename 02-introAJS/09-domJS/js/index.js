@@ -10,7 +10,6 @@ function capturaNombre ()
 function calcularEdad()
 {
     let fecha = new Date();
-    03/02/2022
     añoNac = Number(document.getElementById('fecha').value.slice(0,4));
     añoActual = fecha.getFullYear();
 
